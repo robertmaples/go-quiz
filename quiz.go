@@ -29,6 +29,10 @@ func main() {
 		exit("Failed to parse the provided CSV file.")
 	}
 
+	fmt.Print("Press the return key to begin the quiz.")
+	fmt.Scanf("\n")
+	fmt.Println()
+
 	problems := parseLines(lines)
 	correct := 0
 
